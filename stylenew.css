@@ -1,4 +1,20 @@
 @import "null.css";
+@keyframes left-animation {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes right-animation {
+  0% {
+    right: 50%;
+  }
+  100% {
+    right: 0;
+  }
+}
 h2 {
   margin-bottom: 18px;
   font-size: 34px;
@@ -19,17 +35,32 @@ header {
   display: flex;
   justify-content: center;
   height: 278px;
-  background: url("background_code.jpg");
+  background: url("header2.jpg");
 }
 header img {
   margin-top: 170px;
   height: 200px;
   width: 200px;
   border-radius: 50%;
+  position: relative;
+  left: 0;
+  animation-name: left-animation;
+  animation-duration: 4s;
 }
 
+@media (max-width: 1380px) {
+  .conteiner-info {
+    max-width: 980px;
+  }
+}
+@media (max-width: 970px) {
+  .conteiner-info {
+    max-width: 640px;
+  }
+}
 .conteiner-info {
-  height: 2000px;
+  transition-duration: 1s;
+  max-width: 1380px;
   background: #000;
 }
 .conteiner-info .personal {
@@ -37,11 +68,19 @@ header img {
   color: #ffffff;
 }
 .conteiner-info .personal h1 {
+  position: relative;
+  left: 0;
+  animation-name: left-animation;
+  animation-duration: 4s;
   color: #ffffff;
   text-align: center;
   padding: 100px 0;
 }
 .conteiner-info .network-info {
+  position: relative;
+  right: 0;
+  animation-name: right-animation;
+  animation-duration: 4s;
   display: flex;
   justify-content: center;
   height: 44px;
@@ -50,13 +89,11 @@ header img {
 .conteiner-info .network-info .instagramm img {
   border-radius: 20%;
   height: 44px;
-  width: 44px;
   margin: 0 15px;
 }
 .conteiner-info .network-info .facebook img {
   border-radius: 20%;
   height: 44px;
-  width: 44px;
 }
 .conteiner-info .personal-info {
   color: white;
@@ -67,22 +104,17 @@ header img {
   border: 4px solid #ffffff;
 }
 .conteiner-info .study-info {
-  height: 280px;
+  position: relative;
+  right: 0;
+  animation-name: right-animation;
+  animation-duration: 4s;
   width: 80%;
   margin: 32px 0 0 10%;
-}
-.conteiner-info .study-info .study-info__college {
-  height: 120px;
-  width: 100%;
 }
 .conteiner-info .study-info .study-info__college p {
   font-size: 24px;
   color: #ffffff;
   padding: 15px;
-}
-.conteiner-info .study-info .study-info__university {
-  height: 120px;
-  width: 100%;
 }
 .conteiner-info .study-info .study-info__university p {
   font-size: 24px;
@@ -90,20 +122,20 @@ header img {
   padding: 15px;
 }
 .conteiner-info .ex-work {
+  position: relative;
+  left: 0;
+  animation-name: left-animation;
+  animation-duration: 4s;
   margin: 52px 0 0 5%;
   width: 90%;
-  height: 798px;
-  border: 3px solid #ffffff;
   font-size: 25px;
   color: white;
 }
 .conteiner-info .ex-work table {
   padding: 8px;
-  height: 750px;
   width: 100%;
 }
 .conteiner-info .ex-work .furniture__info {
-  width: 80%;
   height: 150px;
   padding: 15px;
 }
@@ -112,7 +144,7 @@ header img {
 }
 .conteiner-info .ex-work .furniture__img img {
   height: 100px;
-  width: 150px;
+  width: 70%;
   border-radius: 25%;
 }
 .conteiner-info .ex-work .restaurant__info {
@@ -125,7 +157,7 @@ header img {
 }
 .conteiner-info .ex-work .restaurant__img img {
   height: 100px;
-  width: 150px;
+  width: 70%;
   border-radius: 25%;
 }
 .conteiner-info .ex-work .pizza__info {
@@ -138,7 +170,7 @@ header img {
 }
 .conteiner-info .ex-work .pizza__img img {
   height: 100px;
-  width: 150px;
+  width: 70%;
   border-radius: 25%;
 }
 .conteiner-info .ex-work .taxi__info {
@@ -151,7 +183,7 @@ header img {
 }
 .conteiner-info .ex-work .taxi__img img {
   height: 100px;
-  width: 150px;
+  width: 70%;
   border-radius: 25%;
 }
 .conteiner-info .ex-work .property__info {
@@ -164,7 +196,7 @@ header img {
 }
 .conteiner-info .ex-work .property__img img {
   height: 100px;
-  width: 150px;
+  width: 70%;
   border-radius: 25%;
 }
 
