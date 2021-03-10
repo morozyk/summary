@@ -15,9 +15,22 @@
     right: 0;
   }
 }
+body {
+  color: #ffffff;
+}
+
+p {
+  color: #ffffff;
+}
+
+h1 {
+  color: #ffffff;
+}
+
 h2 {
+  color: #ffffff;
   margin-bottom: 18px;
-  font-size: 34px;
+  font-size: 37px;
 }
 
 h3 {
@@ -59,20 +72,18 @@ header img {
   }
 }
 .conteiner-info {
+  background: #000000;
   transition-duration: 1s;
   max-width: 1380px;
-  background: #000;
 }
 .conteiner-info .personal {
   height: 140px;
-  color: #ffffff;
 }
 .conteiner-info .personal h1 {
   position: relative;
   left: 0;
   animation-name: left-animation;
   animation-duration: 4s;
-  color: #ffffff;
   text-align: center;
   padding: 100px 0;
 }
@@ -89,19 +100,20 @@ header img {
 .conteiner-info .network-info .instagramm img {
   border-radius: 20%;
   height: 44px;
+  width: 44px;
   margin: 0 15px;
 }
 .conteiner-info .network-info .facebook img {
   border-radius: 20%;
+  width: 44px;
   height: 44px;
 }
 .conteiner-info .personal-info {
-  color: white;
   font-size: 44px;
   height: 430px;
   width: 50%;
   margin: 0 auto;
-  border: 4px solid #ffffff;
+  border: 4px solid #f00;
 }
 .conteiner-info .study-info {
   position: relative;
@@ -113,91 +125,43 @@ header img {
 }
 .conteiner-info .study-info .study-info__college p {
   font-size: 24px;
-  color: #ffffff;
   padding: 15px;
 }
 .conteiner-info .study-info .study-info__university p {
   font-size: 24px;
-  color: #ffffff;
   padding: 15px;
 }
 .conteiner-info .ex-work {
-  position: relative;
-  left: 0;
-  animation-name: left-animation;
-  animation-duration: 4s;
+  transition-duration: 2s;
   margin: 52px 0 0 5%;
   width: 90%;
   font-size: 25px;
-  color: white;
 }
-.conteiner-info .ex-work table {
-  padding: 8px;
+.conteiner-info img {
+  height: 122px;
+  width: 171px;
+  border-radius: 25%;
+}
+.conteiner-info .furniture, .conteiner-info .restaurant, .conteiner-info .delivery, .conteiner-info .taxi, .conteiner-info .property {
   width: 100%;
+  margin-top: 20px;
+  display: flex;
+  font-size: 29px;
 }
-.conteiner-info .ex-work .furniture__info {
-  height: 150px;
-  padding: 15px;
-}
-.conteiner-info .ex-work .furniture__info:hover {
-  color: #f00f00;
-}
-.conteiner-info .ex-work .furniture__img img {
-  height: 100px;
-  width: 70%;
-  border-radius: 25%;
-}
-.conteiner-info .ex-work .restaurant__info {
+.conteiner-info .furniture__info, .conteiner-info .restaurant__info, .conteiner-info .delivery__info, .conteiner-info .taxi__info, .conteiner-info .property__info {
   width: 80%;
-  height: 150px;
-  padding: 15px;
 }
-.conteiner-info .ex-work .restaurant__info:hover {
-  color: #f00f00;
+.conteiner-info .restaurant {
+  margin-left: 13px;
 }
-.conteiner-info .ex-work .restaurant__img img {
-  height: 100px;
-  width: 70%;
-  border-radius: 25%;
+.conteiner-info .delivery {
+  margin-left: 26px;
 }
-.conteiner-info .ex-work .pizza__info {
-  width: 80%;
-  height: 150px;
-  padding: 15px;
+.conteiner-info .taxi {
+  margin-left: 39px;
 }
-.conteiner-info .ex-work .pizza__info:hover {
-  color: #f00f00;
-}
-.conteiner-info .ex-work .pizza__img img {
-  height: 100px;
-  width: 70%;
-  border-radius: 25%;
-}
-.conteiner-info .ex-work .taxi__info {
-  width: 80%;
-  height: 150px;
-  padding: 15px;
-}
-.conteiner-info .ex-work .taxi__info:hover {
-  color: #f00f00;
-}
-.conteiner-info .ex-work .taxi__img img {
-  height: 100px;
-  width: 70%;
-  border-radius: 25%;
-}
-.conteiner-info .ex-work .property__info {
-  width: 80%;
-  height: 150px;
-  padding: 15px;
-}
-.conteiner-info .ex-work .property__info:hover {
-  color: #f00f00;
-}
-.conteiner-info .ex-work .property__img img {
-  height: 100px;
-  width: 70%;
-  border-radius: 25%;
+.conteiner-info .property {
+  margin-left: 52px;
 }
 
 /*# sourceMappingURL=stylenew.css.map */
